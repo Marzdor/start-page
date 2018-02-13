@@ -11,10 +11,12 @@
       padding-right: 2%;
     }
   }
-  &--center-small {
-    padding-left: 6.5rem;
-    @mixin atLarge {
-      padding-left: 20rem;
+  &--center {
+    &-horizontal-small {
+      padding-left: 6.5rem;
+      @mixin atLarge {
+        padding-left: 20rem;
+      }
     }
   }
 }

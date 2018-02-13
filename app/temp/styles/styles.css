@@ -341,8 +341,14 @@ template {
   display: none;
 }
 
+@media(min-width: 1010px) {
+
+body {
+    background-image: url("../../assets/images/sniper-snow.png")
+}
+  }
+
 .thumbnail {
-  border: 1px black solid;
   display: inline-block;
   width: 6.42rem;
   height: auto;
@@ -361,7 +367,12 @@ template {
     text-align: center;
     font-size: 5rem;
     line-height: 1.25;
+    color: black;
   }
+
+.thumbnail--icon-white {
+      color: white;
+    }
 
 @media(min-width: 1010px) {
 
@@ -380,6 +391,10 @@ template {
   margin-right: auto;
 }
 
+.container--margin-top-large {
+    margin-top: 25rem;
+  }
+
 .row_md-1 {
     float: left;
     width: 10%;
@@ -397,13 +412,13 @@ template {
   }
   }
 
-.row--center-small {
-    padding-left: 6.5rem;
-  }
+.row--center-horizontal-small {
+      padding-left: 6.5rem;
+    }
 
 @media(min-width: 1010px) {
 
-.row--center-small {
-      padding-left: 20rem
-  }
+.row--center-horizontal-small {
+        padding-left: 20rem
+    }
   }
