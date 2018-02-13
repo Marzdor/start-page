@@ -1,0 +1,21 @@
+.thumbnail {
+  border: 1px black solid;
+  display: inline-block;
+  width: 6.42rem;
+  height: auto;
+  padding: 1rem;
+  @mixin atLarge {
+    width: 4.42rem;
+  }
+  &--icon {
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1.25;
+    @mixin atLarge {
+      display: block;
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
+}

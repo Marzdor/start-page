@@ -1,0 +1,20 @@
+.row {
+  &_md-1 {
+    float: left;
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    @mixin atLarge {
+      float: left;
+      width: 10%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+  &--center-small {
+    padding-left: 6.5rem;
+    @mixin atLarge {
+      padding-left: 20rem;
+    }
+  }
+}
