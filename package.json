@@ -5,6 +5,9 @@
   "author": "Marzdor",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
