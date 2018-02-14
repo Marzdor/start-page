@@ -341,6 +341,10 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @media(min-width: 1010px) {
 
 body {
@@ -348,79 +352,85 @@ body {
 }
   }
 
-@media(min-width: 1010px) {
-
 .thumbnail {
-    width: 4.42rem
+  display: inline-block;
+  font-size: 10rem;
+  color: black;
 }
-  }
-
-.thumbnail--icon {
-    display: block;
-    text-align: center;
-    font-size: 10rem;
-    line-height: 1.25;
-    color: black;
-  }
 
 @media(min-width: 1010px) {
 
-.thumbnail--icon-white {
-        color: white
-    }
+.thumbnail--white {
+      color: white
+  }
   }
 
 @media(min-width: 800px) {
 
-.thumbnail--icon {
-      font-size: 8rem
-  }
+.thumbnail {
+    font-size: 8rem
+}
   }
 
 @media(min-width: 1010px) {
 
-.thumbnail--icon {
-      font-size: 4.25rem
-  }
+.thumbnail {
+    font-size: 4.25rem
+}
   }
 
 .container {
-  max-width: 90%;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px white dashed;
 }
 
-@media(min-width: 1010px) {
-
-.container {
-    max-width: 40%
-}
-  }
+/* @mixin atLarge {
+    max-width: 40%;
+  } */
 
 .container--margin-top-large {
     margin-top: 25rem;
   }
 
-.row--gutters {
-    margin-right: -65px;
-    margin-left: -65px;
+.row {
+  text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
+
+/* margin-right: -65px;
+    margin-left: -65px; */
 
 @media(min-width: 1010px) {
   }
 
-.row--gutters>div {
-    padding-right: 65px;
-    padding-left: 65px;
-  }
+/* padding-right: 65px;
+    padding-left: 65px; */
 
 @media(min-width: 1010px) {
   }
 
-.row_md-1 {
+.row_c-1 {
     float: left;
-    width: 10%;
+    width: 8%;
+  }
+
+.row_c-1--margin-4-r {
+        margin-right: 32%;
+      }
+
+.row_c-1--margin-4-l {
+        margin-left: 32%;
+      }
+
+.row_c-4 {
+    float: left;
+    width: 32%;
   }
 
 .row--center {}

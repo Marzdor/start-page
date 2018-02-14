@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   @mixin atLarge {
     background-image: url("../../assets/images/sniper-snow.png");

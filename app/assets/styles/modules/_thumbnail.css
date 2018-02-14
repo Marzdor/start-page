@@ -1,23 +1,16 @@
 .thumbnail {
-  @mixin atLarge {
-    width: 4.42rem;
-  }
-  &--icon {
-    display: block;
-    text-align: center;
-    font-size: 10rem;
-    line-height: 1.25;
-    color: black;
-    &-white {
-      @mixin atLarge {
-        color: white;
-      }
-    }
-    @mixin atMedium {
-      font-size: 8rem;
-    }
+  display: inline-block;
+  font-size: 10rem;
+  color: black;
+  &--white {
     @mixin atLarge {
-      font-size: 4.25rem;
+      color: white;
     }
+  }
+  @mixin atMedium {
+    font-size: 8rem;
+  }
+  @mixin atLarge {
+    font-size: 4.25rem;
   }
 }
