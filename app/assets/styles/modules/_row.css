@@ -1,22 +1,17 @@
 .row {
+  &--gutters {
+    margin-right: -65px;
+    margin-left: -65px;
+    @mixin atLarge {}
+  }
+  &--gutters>div {
+    padding-right: 65px;
+    padding-left: 65px;
+    @mixin atLarge {}
+  }
   &_md-1 {
     float: left;
     width: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-    @mixin atLarge {
-      float: left;
-      width: 10%;
-      padding-left: 2%;
-      padding-right: 2%;
-    }
   }
-  &--center {
-    &-horizontal-small {
-      padding-left: 6.5rem;
-      @mixin atLarge {
-        padding-left: 20rem;
-      }
-    }
-  }
+  &--center {}
 }
