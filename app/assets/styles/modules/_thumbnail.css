@@ -1,6 +1,6 @@
 .thumbnail {
   display: inline-block;
-  font-size: 10rem;
+  font-size: 20rem;
   color: black;
   &--white {
     @mixin atLarge {

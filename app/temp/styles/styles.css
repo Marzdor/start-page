@@ -354,7 +354,7 @@ body {
 
 .thumbnail {
   display: inline-block;
-  font-size: 10rem;
+  font-size: 20rem;
   color: black;
 }
 
@@ -380,53 +380,46 @@ body {
   }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  border: 1px white dashed;
 }
 
-/* @mixin atLarge {
-    max-width: 40%;
-  } */
+@media(min-width: 1010px) {
 
-.container--margin-top-large {
+.container {
+    width: 80%
+}
+  }
+
+.container--m-top-l {
     margin-top: 25rem;
   }
 
 .row {
   text-align: center;
+  display: block;
 }
 
-.row:after {
+.row::after {
     content: "";
-    display: table;
     clear: both;
-  }
-
-/* margin-right: -65px;
-    margin-left: -65px; */
-
-@media(min-width: 1010px) {
-  }
-
-/* padding-right: 65px;
-    padding-left: 65px; */
-
-@media(min-width: 1010px) {
+    display: table;
   }
 
 .row_c-1 {
     float: left;
-    width: 8%;
+    width: 33.33%;
   }
 
-.row_c-1--margin-4-r {
-        margin-right: 32%;
-      }
+@media(min-width: 800px) {
+  }
 
-.row_c-1--margin-4-l {
-        margin-left: 32%;
-      }
+@media(min-width: 1010px) {
+
+.row_c-1 {
+      width: 10%
+  }
+  }
 
 .row_c-4 {
     float: left;
