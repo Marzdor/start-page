@@ -2,14 +2,21 @@
   text-align: center;
   display: block;
   &--offset-2 {
-    position: relative;
-    left: 20%;
-    right: 20%;
+    @mixin atLarge {
+      position: relative;
+      left: 20%;
+      right: 20%;
+    }
   }
   @mixin clearfix;
   &_c-1 {
     float: left;
-    width: 33.33%;
+    @mixin atSmall {
+      width: 50%;
+    }
+    @mixin atMedium {
+      width: 33.33%;
+    }
     @mixin atLarge {
       width: 10%;
     }

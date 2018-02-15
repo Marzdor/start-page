@@ -352,8 +352,19 @@ body {
 .thumbnail {
   display: inline-block;
   font-size: 20rem;
-  color: black;
 }
+
+@media(min-width: 1010px) {
+
+.thumbnail {
+    transition: all .3s ease-out
+}
+    .thumbnail:hover {
+      -webkit-transform: scale(1.8);
+              transform: scale(1.8);
+      color: #bf37e0;
+    }
+  }
 
 .thumbnail--white {
     color: white;
@@ -394,10 +405,13 @@ body {
   display: block;
 }
 
+@media(min-width: 1010px) {
+
 .row--offset-2 {
-    position: relative;
-    left: 20%;
-    right: 20%;
+      position: relative;
+      left: 20%;
+      right: 20%
+  }
   }
 
 .row::after {
@@ -408,7 +422,20 @@ body {
 
 .row_c-1 {
     float: left;
-    width: 33.33%;
+  }
+
+@media(min-width: 320px) {
+
+.row_c-1 {
+      width: 50%
+  }
+  }
+
+@media(min-width: 800px) {
+
+.row_c-1 {
+      width: 33.33%
+  }
   }
 
 @media(min-width: 1010px) {
