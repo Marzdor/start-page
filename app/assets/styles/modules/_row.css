@@ -1,11 +1,15 @@
 .row {
   text-align: center;
   display: block;
+  &--offset-2 {
+    position: relative;
+    left: 20%;
+    right: 20%;
+  }
   @mixin clearfix;
   &_c-1 {
     float: left;
     width: 33.33%;
-    @mixin atMedium {}
     @mixin atLarge {
       width: 10%;
     }

@@ -3,7 +3,5 @@
 }
 
 body {
-  @mixin atLarge {
-    background-image: url("../../assets/images/sniper-snow.png");
-  }
+  background-color: black;
 }
