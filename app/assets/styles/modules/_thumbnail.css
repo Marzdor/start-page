@@ -1,6 +1,6 @@
 .thumbnail {
   display: inline-block;
-  font-size: 20rem;
+  font-size: 6rem;
   @mixin atLarge {
     transition: all .3s ease-out;
     &:hover {
@@ -10,9 +10,6 @@
   }
   &--white {
     color: white;
-  }
-  @mixin atMedium {
-    font-size: 8rem;
   }
   @mixin atLarge {
     font-size: 4.25rem;

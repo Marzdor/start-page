@@ -5,6 +5,12 @@
     width: 80%;
   }
   &--m-top-l {
-    margin-top: 25rem;
+    margin-top: 10%;
+    @mixin atMedium {
+      margin-top: 25%;
+    }
+    @mixin atLarge {
+      margin-top: 10%;
+    }
   }
 }

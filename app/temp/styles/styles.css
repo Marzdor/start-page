@@ -351,10 +351,10 @@ body {
 
 .thumbnail {
   display: inline-block;
-  font-size: 20rem;
+  font-size: 6rem;
 }
 
-@media(min-width: 1010px) {
+@media(min-width: 1200px) {
 
 .thumbnail {
     transition: all .3s ease-out
@@ -370,14 +370,7 @@ body {
     color: white;
   }
 
-@media(min-width: 800px) {
-
-.thumbnail {
-    font-size: 8rem
-}
-  }
-
-@media(min-width: 1010px) {
+@media(min-width: 1200px) {
 
 .thumbnail {
     font-size: 4.25rem
@@ -389,7 +382,7 @@ body {
   margin: 0 auto;
 }
 
-@media(min-width: 1010px) {
+@media(min-width: 1200px) {
 
 .container {
     width: 80%
@@ -397,7 +390,21 @@ body {
   }
 
 .container--m-top-l {
-    margin-top: 25rem;
+    margin-top: 10%;
+  }
+
+@media(min-width: 800px) {
+
+.container--m-top-l {
+      margin-top: 25%
+  }
+  }
+
+@media(min-width: 1200px) {
+
+.container--m-top-l {
+      margin-top: 10%
+  }
   }
 
 .row {
@@ -405,10 +412,13 @@ body {
   display: block;
 }
 
-@media(min-width: 1010px) {
+.row--offset-2 {
+    position: relative;
+  }
+
+@media(min-width: 1200px) {
 
 .row--offset-2 {
-      position: relative;
       left: 20%;
       right: 20%
   }
@@ -422,13 +432,7 @@ body {
 
 .row_c-1 {
     float: left;
-  }
-
-@media(min-width: 320px) {
-
-.row_c-1 {
-      width: 50%
-  }
+    width: 50%;
   }
 
 @media(min-width: 800px) {
@@ -438,7 +442,7 @@ body {
   }
   }
 
-@media(min-width: 1010px) {
+@media(min-width: 1200px) {
 
 .row_c-1 {
       width: 10%

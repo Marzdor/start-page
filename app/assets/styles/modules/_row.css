@@ -2,8 +2,8 @@
   text-align: center;
   display: block;
   &--offset-2 {
+    position: relative;
     @mixin atLarge {
-      position: relative;
       left: 20%;
       right: 20%;
     }
@@ -11,9 +11,7 @@
   @mixin clearfix;
   &_c-1 {
     float: left;
-    @mixin atSmall {
-      width: 50%;
-    }
+    width: 50%;
     @mixin atMedium {
       width: 33.33%;
     }
