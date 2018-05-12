@@ -349,13 +349,20 @@ a {
   color: lime;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 body {
   background-color: #000;
 }
 
 .container {
     width: 80%;
-    margin: 200px auto;
+    margin: 190px auto;
     background-color: #000;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -363,20 +370,30 @@ body {
 
 .container-reddit {
         grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
     }
 
 .container-youtube {
         grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
     }
 
 .container-github {
         grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
         grid-template-rows: repeat(6, 1fr);
     }
 
 .container-twitch {
         grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
         grid-template-rows: repeat(6, 1fr);
+    }
+
+.container-google {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 1;
+        margin: 0 0 10px 0;
     }
 
 .content {
@@ -387,6 +404,14 @@ body {
     align-items: center;
     text-align: center;
 }
+
+.content--google {
+        width: 100%;
+    }
+
+.content--google>input {
+            width: 100%;
+        }
 
 .content-sub-header {
             border: 1px solid lime;

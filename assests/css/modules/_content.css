@@ -5,6 +5,12 @@
     justify-self: center;
     align-items: center;
     text-align: center;
+    &--google {
+        width: 100%;
+        &>input {
+            width: 100%;
+        }
+    }
     &-sub {
         &-header {
             border: 1px solid lime;
