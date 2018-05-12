@@ -3,8 +3,8 @@ window.onload = function () {
 }
 
 function getStreams() {
-    const following = ["kitboga", "adam13531", "relaxbeats", "day9tv", "purgegamers", "sodapoppin", "sinqnew",
-        "dansgaming", "annemunition", "whilke", "lirik", "giantwaffle", "sevadus"
+    const following = ["kitboga", "adam13531", "day9tv", "purgegamers", "sodapoppin",
+        "dansgaming", "lirik", "giantwaffle", "sevadus"
     ];
     for (let i = 0; i < following.length; i++) {
         let request = new XMLHttpRequest();
