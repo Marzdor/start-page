@@ -35,17 +35,18 @@ function getStreams() {
 }
 
 function createHtml(data) {
-    console.log(data);
     let alt = data.display_name + " logo";
+    let gameName = data.game;
+    if (gameName.length > 22) {
+        gameName = gameName.slice(0, 22);
+    }
     const markup = `
-    <div class="twitch_stream">
-        <a href="${data.url}"><img src="${data.logo}" alt="${alt}></a>
+    <a class="twitch_stream" href="${data.url}">        
+        <img class="twitch_stream-logo" src="${data.logo}" alt="${alt}">
         <h4 class="twitch_stream-name">${data.display_name}</h4>
-        <h6 class="twitch_stream-game">${data.game}</h6>
-        <p class="twitch_stream-status">${data.status}</p>
-    </div>
+        <h6 class="twitch_stream-game">${gameName}</h6>              
+    </a>
     `;
     let target = document.querySelector(".twitch");
     target.insertAdjacentHTML("beforeend", markup);
-    console.log(target);
 }

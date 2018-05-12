@@ -1,5 +1,5 @@
 .container {
     width: 80%;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    margin: 200px auto;
+    background-color: $mainBackground;
 }
