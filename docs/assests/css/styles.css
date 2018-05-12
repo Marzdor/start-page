@@ -361,11 +361,14 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 800px;
+    height: 600px;
     margin: 190px auto;
     background-color: #000;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 530px;
+    border: 3px dashed lime;
 }
 
 .container-reddit {
@@ -393,11 +396,10 @@ body {
 .container-google {
         grid-column: 2 / span 2;
         grid-row: 1 / span 1;
-        margin: 0 0 10px 0;
     }
 
 .content {
-    width: 205px;
+    width: 180px;
     display: grid;
     grid-template-columns: 1fr;
     justify-self: center;
@@ -415,6 +417,7 @@ body {
 
 .content-sub-header {
             border: 1px solid lime;
+            width: 180px;
             height: 50px;
             font-size: 2rem;
             font-weight: 600;
@@ -424,13 +427,14 @@ body {
             border: 1px solid lime;
             line-height: 50px;
             height: 50px;
+            width: 180px;
         }
 
 .content-sub-search {
             border: 1px solid lime;
             height: 50px;
+            width: 180px;
             padding: 0 5px;
-            width: 205px;
             background-color: #000;
             color: lime;
             font-size: 1.125rem;
@@ -453,7 +457,6 @@ body {
 .content-stream-logo {
             grid-row: 1 / span 2;
             grid-column: 1 / span 1;
-            width: 50px;
             height: 50px;
         }
 
