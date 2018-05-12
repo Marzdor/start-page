@@ -8,14 +8,12 @@ function getStreams() {
     ];
     for (let i = 0; i < following.length; i++) {
         let request = new XMLHttpRequest();
-        let callUrl = "https://wind-bow.glitch.me/twitch-api/streams/" + following[i] + "?callback=?";
-
+        let callUrl = "https://api.twitch.tv/kraken/streams/" + following[i] + "?client_id=mvk2wo7a14satb8zdehas656gz9q8k";
         request.open("GET", callUrl);
+
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
                 let data = request.responseText;
-
-                data = data.slice(32, data.length - 2); // make data valid json
                 data = JSON.parse(data);
                 data = data.stream
 
