@@ -1,6 +1,17 @@
-.twitch {
-    width: 205px;
-    &_stream {
+.content {
+    &-header {
+        border: 1px solid lime;
+        height: 50px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &-body {
+        align-self: center;
+        border: 1px solid lime;
+        line-height: 50px;
+        height: 50px;
+    }
+    &-stream {
         display: grid;
         grid-template-columns: 80px 125px;
         grid-template-rows: 40px 40px;

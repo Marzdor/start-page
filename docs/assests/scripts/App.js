@@ -3,7 +3,7 @@ window.onload = function () {
 }
 
 function getStreams() {
-    let following = ["kitboga", "adam13531", "relaxbeats", "day9tv", "purgegamers", "sodapoppin", "sinqnew",
+    const following = ["kitboga", "adam13531", "relaxbeats", "day9tv", "purgegamers", "sodapoppin", "sinqnew",
         "dansgaming", "annemunition", "whilke", "lirik", "giantwaffle", "sevadus"
     ];
     for (let i = 0; i < following.length; i++) {
@@ -21,7 +21,7 @@ function getStreams() {
 
                 if (data !== null) {
                     data = data.channel;
-                    createHtml(data);
+                    genTwitchHtml(data);
                 }
             } else {
                 console.log("Getting followers reached server but returned error: " + request.status);
@@ -34,19 +34,19 @@ function getStreams() {
     }
 }
 
-function createHtml(data) {
+function genTwitchHtml(data) {
     let alt = data.display_name + " logo";
     let gameName = data.game;
     if (gameName.length > 22) {
         gameName = gameName.slice(0, 22);
     }
     const markup = `
-    <a class="twitch_stream" href="${data.url}">        
-        <img class="twitch_stream-logo" src="${data.logo}" alt="${alt}">
-        <h4 class="twitch_stream-name">${data.display_name}</h4>
-        <h6 class="twitch_stream-game">${gameName}</h6>              
+    <a class="content-stream" href="${data.url}">        
+        <img class="content-stream-logo" src="${data.logo}" alt="${alt}">
+        <h4 class="content-stream-name">${data.display_name}</h4>
+        <h6 class="content-stream-game">${gameName}</h6>              
     </a>
     `;
-    let target = document.querySelector(".twitch");
+    let target = document.querySelector(".container-twitch");
     target.insertAdjacentHTML("beforeend", markup);
 }
