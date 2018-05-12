@@ -3,22 +3,16 @@
     margin: 200px auto;
     background-color: $mainBackground;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     &-reddit {
         grid-column: 2 / span 1;
-        justify-self: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 205px;
-        text-align: center;
     }
     &-youtube {
         grid-column: 3 / span 1;
-        justify-self: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 205px;
-        text-align: center;
+    }
+    &-github {
+        grid-column: 4 / span 1;
+        grid-template-rows: repeat(5, 1fr);
     }
     &-twitch {
         width: 205px;
