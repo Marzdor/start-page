@@ -11,10 +11,14 @@
 
 <body>
     <div class="container">
-        <div class="container-twitch">
+        <div class="container-twitch content">
+            <a class="content-sub-header" href="https://www.twitch.tv/">Twitch</a>
         </div>
         <div class="container-reddit content">
             <a class="content-sub-header" href="https://www.reddit.com/">Reddit</a>
+            <form action="https://www.reddit.com/search?q=" method="get" autocomplete="off" target="_blank">
+                <input class="content-sub-search" type="text" name="q" placeholder="Search Reddit">
+            </form>
             <a class="content-sub-body" href="https://www.reddit.com/r/dailyprogrammer/">/dailyprogrammer</a>
             <a class="content-sub-body" href="https://www.reddit.com/r/Fitness/">/Fitness</a>
             <a class="content-sub-body" href="https://www.reddit.com/r/learnprogramming/">/learnprogramming</a>
@@ -22,6 +26,9 @@
         </div>
         <div class="container-youtube content">
             <a class="content-sub-header" href="https://youtube.com">Youtube</a>
+            <form action="http://www.youtube.com/results" method="get" autocomplete="off" target="_blank">
+                <input class="content-sub-search" name="search_query" type="text" placeholder="Search Youtube" />
+            </form>
             <a class="content-sub-body" href="https://www.youtube.com/user/LinusTechTips/videos">LinusTechTips</a>
             <a class="content-sub-body" href="https://www.youtube.com/user/FitnessFAQs/videos">FitnessFAQs</a>
             <a class="content-sub-body" href="https://www.youtube.com/user/bgfilms/videos">Binging with Babish</a>
@@ -29,6 +36,9 @@
         </div>
         <div class="container-github content">
             <a class="content-sub-header" href="https://github.com/">GitHub</a>
+            <form action="https://github.com/search" method="get" autocomplete="off" target="_blank">
+                <input class="content-sub-search" type="text" name="q" value="" placeholder="Search GitHub">
+            </form>
             <a class="content-sub-body" href="https://github.com/Marzdor">Marzdor</a>
             <a class="content-sub-body" href="https://github.com/Marzdor?tab=repositories">Repositories</a>
         </div>

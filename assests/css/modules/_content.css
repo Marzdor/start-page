@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-self: center;
+    align-items: center;
     text-align: center;
     &-sub {
         &-header {
@@ -12,10 +13,22 @@
             font-weight: 600;
         }
         &-body {
-            align-self: center;
             border: 1px solid lime;
             line-height: 50px;
             height: 50px;
+        }
+        &-search {
+            border: 1px solid lime;
+            height: 50px;
+            padding: 0 5px;
+            width: 205px;
+            background-color: $mainBackground;
+            color: lime;
+            font-size: 1.125rem;
+            text-align: center;
+            &::placeholder {
+                color: lime;
+            }
         }
     }
     &-stream {
