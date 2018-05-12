@@ -357,6 +357,8 @@ body {
     width: 80%;
     margin: 200px auto;
     background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .twitch {
@@ -388,3 +390,26 @@ body {
             grid-column: 2/ span 1;
             grid-row: 2 / span 1;
         }
+
+.reddit {
+    grid-column: 2 / span 1;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 205px;
+    text-align: center;
+}
+
+.reddit-header {
+        border: 1px solid lime;
+        height: 50px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+.reddit-body {
+        align-self: center;
+        border: 1px solid lime;
+        line-height: 50px;
+        height: 50px;
+    }
