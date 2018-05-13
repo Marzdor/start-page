@@ -11,6 +11,13 @@
             width: 100%;
         }
     }
+    &-header {
+        color: lime;
+        border: solid 4px lime;
+        width: 800px;
+        padding-left: 5px;
+        margin: 180px auto 0 auto;
+    }
     &-sub {
         &-header {
             border: 1px solid lime;

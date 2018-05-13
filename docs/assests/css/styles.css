@@ -288,12 +288,15 @@ body {
 .container {
     width: 800px;
     height: 600px;
-    margin: 190px auto;
+    margin: 0 auto;
     background-color: #000;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 70px 530px;
-    border: 3px dashed lime;
+    border-top: 0;
+    border-left: 2px solid lime;
+    border-right: 2px solid lime;
+    border-bottom: 2px solid lime;
 }
 .container-reddit {
         grid-column: 2 / span 1;
@@ -333,6 +336,13 @@ body {
 .content--google>input {
             width: 100%;
         }
+.content-header {
+        color: lime;
+        border: solid 4px lime;
+        width: 800px;
+        padding-left: 5px;
+        margin: 180px auto 0 auto;
+    }
 .content-sub-header {
             border: 1px solid lime;
             width: 180px;

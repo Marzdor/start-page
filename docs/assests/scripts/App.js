@@ -4,7 +4,7 @@ window.onload = function () {
 
 function getStreams() {
     const following = ["kitboga", "adam13531", "day9tv", "purgegamers", "sodapoppin",
-        "dansgaming", "lirik", "giantwaffle", "sevadus"
+        "dansgaming", "lirik", "giantwaffle", "sevadus", "annemunition"
     ];
     for (let i = 0; i < following.length; i++) {
         let request = new XMLHttpRequest();

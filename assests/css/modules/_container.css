@@ -1,12 +1,15 @@
 .container {
     width: 800px;
     height: 600px;
-    margin: 190px auto;
+    margin: 0 auto;
     background-color: $mainBackground;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 70px 530px;
-    border: 3px dashed lime;
+    border-top: 0;
+    border-left: 2px solid lime;
+    border-right: 2px solid lime;
+    border-bottom: 2px solid lime;
     &-reddit {
         grid-column: 2 / span 1;
         grid-row: 2 / span 1;
