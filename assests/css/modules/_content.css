@@ -7,9 +7,18 @@
     text-align: center;
     &--google {
         width: 100%;
+        grid-column: 2 / span 2;
         &>input {
             width: 100%;
         }
+    }
+    &--gmail {
+        grid-column: 4 / span 1;
+        align-self: center;
+    }
+    &--gdocs {
+        grid-column: 1 / span 1;
+        align-self: center;
     }
     &-header {
         color: lime;
